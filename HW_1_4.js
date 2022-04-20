@@ -1,9 +1,4 @@
-
-age = prompt('Enter your age', );
-age = age.replace(/'/g, '');
-alert(yourAge(age));
-
-function yourAge(age) {
+const yourAge = function (age) {
     
     let age_1 = Number(age);
 
@@ -23,3 +18,7 @@ function yourAge(age) {
     }
     }
   }
+
+let age = prompt('Enter your age');
+age = age.replace(/'/g, '');
+alert(yourAge(age));
