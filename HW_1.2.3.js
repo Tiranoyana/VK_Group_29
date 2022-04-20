@@ -1,7 +1,8 @@
-  function yourAge(age) {
+const yourAge = function(age) {
     
     let age_1 = age.replace(/'/g, '');
-    age_1 = Number(age_1);
+    
+    //age_1 = Number(age_1); нужно ли здесь преобразовывать,если я преобразовываю в ифе?
 
     if (age_1 != Number(age_1)) {
         console.log("Error, you didn't enter your age in numbers");
