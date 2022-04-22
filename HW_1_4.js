@@ -1,6 +1,7 @@
-const yourAge = function (age) {
-    
-    let age_1 = Number(age);
+let age = prompt('Enter your age');
+age = age.replace(/'/g, '');
+
+const yourAge = function (age_1) {
 
     if (age_1 != Number(age_1)) {
         alert("Error, you didn't enter your age in numbers");
@@ -19,6 +20,4 @@ const yourAge = function (age) {
     }
   }
 
-let age = prompt('Enter your age');
-age = age.replace(/'/g, '');
-alert(yourAge(age));
+  yourAge(age);
